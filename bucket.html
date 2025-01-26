@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="bucket.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+        <p>"The best way to predict your future is to create it, one dream at a time." – Anonymous</p>
+    </header>
+    <main>
+        <section class="bucket-list">
+            <h2>Bucket List Items</h2>
+            <ul>
+                <li class="list-item">
+                    <span>Learn driving</span>
+                    <span class="status pending"></span>
+                  </li>
+                  <li class="list-item">
+                    <span>To become an engineer</span>
+                    <span class="status completed"> ✔ </span>
+                    <li class="list-item">
+                      <span>Work on my major Project</span>
+                      <span class="status pending"></span>
+                    </li>
+                    <li class="list-item">
+                      <span>Taking my parents on a long journey</span>
+                      <span class="status completed"> ✔ </span>
+                    </li>
+                    
+                    <li class="list-item">
+                      <span>To do charity</span>
+                      <span class="status pending"></span>
+                    </li>  
+                    
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 My Bucket List - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Optional: This will allow you to toggle the checkmarks by clicking on the list items
+        const checkmarks = document.querySelectorAll('.checkmark');
+        checkmarks.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('checked');
+            });
+        });
+    </script>
+</body>
+</html>

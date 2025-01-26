@@ -1,0 +1,161 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: rgb(153, 102, 102);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    transition: color 0.3s ease;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header:hover h1 {
+    color: rgb(30, 28, 28);
+}
+
+header:hover p {
+    color: rgb(30,28,28);
+}
+
+main {
+    padding: 8px;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color :rgb(177, 161, 161);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+.bucket-list h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.bucket-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bucket-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bucket-list li:hover {
+    background-color: rgb(153, 102, 102);
+    color: white;
+    cursor: pointer;
+}
+
+.bucket-list input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.bucket-list input[type="checkbox"]:hover {
+    transform: scale(1.3);
+}
+
+.bucket-list input[type="checkbox"]:checked + label .tick {
+    display: inline-block;
+    content: "\2713"; 
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: rgb(33, 192, 33);
+}
+
+.bucket-list label .tick {
+    display: none;
+}
+
+footer {
+    background-color: rgb(153, 102, 102);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .container p {
+    margin: 0;
+}
+.status {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  
+  .status.completed {
+    background-color: #069952;
+    color: white;
+  }
+  
+  .status.pending {
+    /* background-color: #ff4dff; */
+    color: white;
+  }
+  
+@media (max-width: 768px) {
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .bucket-list h2 {
+        font-size:1.6rem;
+    }
+
+    .bucket-list li {
+        font-size: 1rem;
+    }
+
+    .bucket-list input[type="checkbox"] {
+        transform: scale(1.1);
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
